@@ -1,0 +1,377 @@
+/*!
+ * snoobe 6.5.2
+ */
+
+@import "bootstrap/bootstrap.less";
+@import "partials/home";
+@import "partials/header";
+@import "partials/product";
+@import "partials/about";
+@import "partials/faq";
+@import "partials/contact";
+@import "partials/blog";
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+@media (min-width: 1200px) { 
+
+  .wrapper-full-width .container {
+    max-width: 960px;
+  }
+
+}
+
+html,body {
+   height: 100%;
+}
+
+.left {
+   float: left;
+}
+.right {
+   float: right;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.banner { }
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content { }
+h1 {
+   color: @dark-grey;
+   font-size: 55px;
+   text-align: center;
+
+   &:after {
+      content: '';
+      display: block;
+      width: 70px;
+      padding-bottom: 0.4em;
+      height: 0;
+      border-top: 4px solid @light-green;
+      margin: 4px auto 0;
+   }
+}
+p.subheader {
+   display: block;
+   margin: 0 auto;
+   color: @dark-grey;
+   font-size: 18px;
+   text-align: center;
+   width: 70%;
+}
+
+.google-play {
+   display: block;
+   width: 133px;
+   height: 47px;
+   background: url(../img/google-play.png) no-repeat center;
+}
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info {
+   background-color: @dark-grey;
+   color: #fff;
+
+   .top {
+      padding-top: 50px;
+      padding-bottom: 35px;
+
+      h3 {
+         margin-top: 0;
+         font-size: 16px;
+      }
+      .footer-row {
+         padding: 15px 0;
+         border-bottom: 1px solid #888888;
+
+         a {
+            display: block;
+            color: #fff;
+            font-size: 13px;
+         }
+         .footer-mail {
+            padding-left: 20px;
+            background: url(../img/footer-mail.png) no-repeat left center;
+         }
+         .footer-phone {
+            padding-left: 20px;
+            background: url(../img/footer-phone.png) no-repeat left center;
+         }
+         .footer-address {
+            padding-left: 20px;
+            background: url(../img/footer-location.png) no-repeat left 2px;
+         }
+      }
+      .soc-media {
+         overflow: hidden;
+
+         a {
+            float: left;
+            width: 25%;
+            height: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &.footer-facebook {
+               background-image: url(../img/footer-facebook.png);
+            }
+            &.footer-twitter {
+               background-image: url(../img/footer-twitter.png);
+            }
+            &.footer-linkedin {
+               background-image: url(../img/footer-linkedin.png);
+            }
+            &.footer-google {
+               background-image: url(../img/footer-google.png);
+            }
+         }
+      }
+      /* NEWESLETTER */
+      blockquote {
+         padding: 20px;
+         color: #fff;
+         font-size: 13px;
+         border: 1px solid #888888;
+         border-radius: 1px;
+
+         &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 13px;
+            background: url(../img/testimonial-arrow.png) no-repeat center;
+            bottom: 28px;
+            left: 11px;
+         }
+      }
+      .Testimonials_Widget_Widget {
+         .bx-viewport {
+            overflow: visible !important;
+         }
+      }
+      .credit {
+         text-align: left;
+         padding-left: 45px;
+         height: 11px;
+         margin-top: 29px !important;
+
+         &:before {
+            content: '';
+         }
+         .author {
+            font-size: 14px;
+
+            a {
+               font-size: 14px;
+               color: #fff;
+               text-decoration: none;
+            }
+         }
+         .join {
+            &:before {
+               content: '';
+            } 
+         }
+         .company {
+            margin-left: 4px;
+            color: @green;
+            font-size: 12px;
+
+            a {
+               margin-left: 4px;
+               color: @green;
+               font-size: 12px;
+            }
+         }
+      }
+      .bx-controls-auto {
+         display: none;
+      }
+      .bx-prev {
+         top: 90%;
+         width: 16px;
+         height: 16px;
+         background: url(../img/testimonial-left.png) no-repeat center;
+      }
+      .bx-next {
+         top: 90%;
+         right: 5px;
+         width: 16px;
+         height: 16px;
+         background: url(../img/testimonial-right.png) no-repeat center;
+      }
+      .testimonials-widget {
+         position: relative;
+
+         .image {
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            margin: 0;
+            bottom: -20px;
+            left: 0;
+
+            img {
+               width: 40px;
+               height: 40px;
+               border-radius: 50%;
+            }
+         }
+      }
+   }
+   .bottom {
+      background-color: #fff;
+      color: #969595;
+
+      .container {
+         overflow: hidden;
+
+         .left {
+            float: left;
+
+            p {
+               margin-top: 10px;
+            }
+         }
+         .right {
+            float: right;
+
+            ul {
+               padding-left: 0;
+               margin-bottom: 0px;
+               margin-top: 10px;
+
+               li {
+                  float: left;
+                  list-style: none;
+
+                  a {
+                     color: #a3a2a2;
+                     font-size: 14px;
+                     padding: 0px 9px;
+
+                  }
+                  &:last-child {
+                     a {
+                        padding-right: 0;
+                     }
+                  }
+                  &.active {
+                     a {
+                        color: #484747;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+   .tweet-wrap {
+      padding-left: 30px;
+
+      li {
+         .twiget-tweet {
+            img {
+               position: absolute;
+               left: 14px;
+               width: 20px;
+               height: 20px;
+            }
+            p {
+               color: #ffffff;
+               font-size: 13px;
+            }
+            a {
+               color: #ffffff;
+               font-size: 13px;
+               text-decoration: underline;
+            }
+         }
+         .twiget-meta {
+            .timestamp {
+               a {
+                  color: #a3d55c;
+                  font-size: 11px;
+               }
+            }
+            .client {
+               display: none;
+            }
+         }
+      }
+   }
+   .tweet-bio, .twigetfollow {
+      display: none;
+   }
+}
+
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: @screen-sm-min) { }
+
+@media (min-width: @screen-md-min) { }
+
+@media (min-width: @screen-lg-min) { }

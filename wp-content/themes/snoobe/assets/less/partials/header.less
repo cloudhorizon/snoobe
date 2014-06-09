@@ -1,0 +1,116 @@
+//
+// Header
+// --------------------------------------------------
+
+.navbar-static-top {
+	border-top: 8px solid @green;
+	background: none;
+}
+
+.navbar-nav {
+	float: right;
+
+	li {
+		background: url(../img/divider-line.png) no-repeat right 70px;
+
+		a {
+			padding: 74px 27px 10px;
+			color: @grey;
+			text-align: center;
+			font-size: 18px;
+		}
+	}
+}
+
+.navbar-brand {
+	float: left;
+	padding: 0;
+	font-size: 18px;
+	line-height: 160px;
+	height: 160px;
+}
+
+.navbar {
+	border-bottom: 0;
+	margin: 0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background: none;
+
+	&:after {
+		content: '';
+		display: block;
+		width: 45px;
+		padding-bottom: 0.4em;
+		height: 0;
+		border-top: 4px solid @light-green;
+		margin: 4px auto 0;
+	}
+}
+
+.header {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 675px;
+	background: url(../img/woods.png) no-repeat center;
+
+	h1 {
+		padding-top: 300px;
+		color: #fff;
+		text-align: center;
+		font-size: 72px;
+		margin: 0;
+
+		&:after {
+			content: '';
+			display: block;
+			width: 110px;
+			padding-bottom: 0.4em;
+			height: 0;
+			border-top: 4px solid @light-green;
+			margin: 5px auto 0;
+		}
+
+		.product & {
+			background: url(../img/background-product.png) no-repeat center 240px;
+		}
+		.about & {
+			background: url(../img/background-about.png) no-repeat center 240px;
+		}
+		.faq & {
+			background: url(../img/background-faq.png) no-repeat center 240px;
+		}
+		.contact & {
+			background: url(../img/background-contact.png) no-repeat center 240px;
+		}
+		.blog & {
+			background: url(../img/background-blog.png) no-repeat center 240px;
+		}
+	}
+	p {
+		color: #fff;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.robin {
+		position: absolute;
+
+		.about & {
+			right: 0px;
+			bottom: 0px;
+		}
+		.faq & {
+			right: 0px;
+			bottom: 0px;
+		}
+		.product & {
+			right: 0px;
+			bottom: 0px;
+		}
+	}
+}
+
+

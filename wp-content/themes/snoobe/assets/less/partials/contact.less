@@ -1,0 +1,146 @@
+//
+// Contact
+// --------------------------------------------------
+
+.contact-1 {
+	.container {
+		#contact-map {
+			height: 325px;
+			border-bottom: 2px solid @green;
+		}
+	}
+}
+
+.contact-area {
+	overflow: hidden;
+	margin-top: 70px;
+
+	h3 {
+		margin-bottom: 25px;
+		color: #484747;
+		font-size: 20px;
+	}
+	.contact-form {
+		padding-left: 0;
+		
+		.wpcf7-submit {
+			-webkit-appearance: none;
+			width: 95px;
+			height: 35px;
+			border: 0;
+			color: #fff;
+			font-size: 16px;
+			background-color: #7dbd22;
+		}
+
+		.form-left {
+			padding-left: 0;
+
+			input {
+				width: 100%;
+				padding: 15px;
+				margin-bottom: 10px;
+				color: #a3a2a2;
+				font-size: 13px;
+				border: 1px solid #eeeeee;
+			}
+		}
+		.form-right {
+			textarea {
+				width: 100%;
+				height: 170px;
+				padding: 15px;
+				border: 1px solid #eeeeee;
+			}
+		}
+	}
+}
+
+.form-container {
+	overflow: hidden;
+}
+
+.contact-address {
+	.contact-data {
+		.row {
+			margin-bottom: 14px;
+			margin-left: 0;
+
+			span {
+				color: #a3a2a2;
+				font-size: 13px;
+			}
+			a {
+				color: #a3a2a2;
+				font-size: 13px;
+
+				&.active, &:hover, &:focus, &:active {
+					color: #7dbd22;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	ul {
+		padding-left: 0;
+		list-style: none;
+		
+		li {
+			display: inline-block;
+			width: 15%;
+			height: 30px;
+
+			a {
+				display: block;
+				width: 20px;
+				height: 20px;
+				background-repeat: no-repeat;
+				background-position: center;
+				
+				&.contact-facebook {
+					background-image: url(../img/contact-facebook.png); 
+
+					&.active, &:hover, &:focus {
+						background-image: url(../img/contact-facebook-active.png); 
+					}
+				}
+				&.contact-twitter {
+					background-image: url(../img/contact-twitter.png); 
+
+					&.active, &:hover, &:focus {
+						background-image: url(../img/contact-twitter-active.png); 
+					}
+				}
+				&.contact-vimeo {
+					background-image: url(../img/contact-vimeo.png); 
+
+					&.active, &:hover, &:focus {
+						background-image: url(../img/contact-vimeo-active.png); 
+					}
+				}
+				&.contact-myspace {
+					background-image: url(../img/contact-myspace.png); 
+
+					&.active, &:hover, &:focus {
+						background-image: url(../img/contact-myspace-active.png); 
+					}
+				}
+				&.contact-flickr {
+					background-image: url(../img/contact-flickr.png); 
+
+					&.active, &:hover, &:focus {
+						background-image: url(../img/contact-flickr-active.png); 
+					}
+				}
+				&.contact-dribbble {
+					background-image: url(../img/contact-dribbble.png); 
+
+					&.active, &:hover, &:focus {
+						background-image: url(../img/contact-dribbble-active.png); 
+					}
+				}
+			}
+		}
+	}
+}
+
