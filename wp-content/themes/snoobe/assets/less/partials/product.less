@@ -12,6 +12,7 @@
 	}
 	h3 {
 		margin-bottom: 40px;
+		font-family: @black;
 		font-size: 24px;
 		color: @dark-grey;
 	}
@@ -32,11 +33,13 @@
 
 	h2 {
 		color: #fff;
+		font-family: @black;
 		font-size: 35px;
 		text-align: center;
 	}
 	p {
 		color: #fff;
+		font-family: @black;
 		font-size: 24px;
 		text-align: center;
 	}
@@ -68,6 +71,13 @@
 		width: 33%;
 		margin-bottom: 75px;
 
+		@media(max-width:768px){
+			width: 50%;
+		}
+		@media(max-width:480px){
+			width: 100%;
+		}
+
 		.image {
 			margin: 0;
 			margin-right: 15px;
@@ -79,6 +89,7 @@
 			padding-top: 0px;
 			padding-left: 90px;
 			color: #666666;
+			font-family: @italic;
 			font-size: 16px;
 		}
 		.credit {
@@ -90,6 +101,7 @@
 			}
 			.author {
 				display: block;
+				font-family: @bold;
 				font-size: 16px;
 				color: #333333;
 

@@ -19,7 +19,21 @@ var win = $(window);
 var windowWidth = win.width();
 var windowHeight = win.height();
 
+
 (function($) {
+
+  if($('body').hasClass('home')) {
+    $('html').addClass('home-html');
+  }
+  
+  var parallax;
+  if ('.home') {
+    $(function(){
+      parallax = new Parallax();
+    });
+  }
+  
+
 
 // Use this variable to set up the common and page specific functions. If you 
 // rename this variable, you will also need to rename the namespace below.

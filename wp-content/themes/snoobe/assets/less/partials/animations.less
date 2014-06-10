@@ -1,0 +1,21 @@
+//
+// Animations
+// --------------------------------------------------
+
+
+// Animate rays on first slide
+.rays	{ 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1000px;
+	margin-left: -900px;
+  -webkit-animation:spin 20s linear infinite;
+  -moz-animation:spin 20s linear infinite;
+  animation:spin 20s linear infinite;
+  z-index: 2;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

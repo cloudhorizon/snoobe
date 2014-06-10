@@ -11,6 +11,10 @@
 	display: block;
 	width: 257px;
 
+	@media (max-width: 768px) {
+		margin: 0 auto 30px;
+	}
+
 	.description {
 		padding: 18px;
 		border: 1px solid #eeeeee;
@@ -81,19 +85,29 @@
 				float: left;
 				width: 100px;
 				margin-right: 40px;
+
+				@media (max-width: 620px) {
+					float: none;
+					margin-bottom: 10px;
+				}
 			}
 			.press-content {
 				float: left;
+				@media (max-width: 620px) {
+					float: none;
+				}
 
 				p {
 					margin: 0px 0px 0px 3px;
 				}
 				.headline {
 					color: @dark-grey;
+					font-family: @bold-italic;
 					font-size: 13px;
 				}
 				.source {
 					color: #a5d75f;
+					font-family: @bold-italic;
 					font-size: 11px;
 				}
 			}

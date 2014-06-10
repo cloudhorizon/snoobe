@@ -26,7 +26,7 @@ Template Name: About Template
 <div class="about-2 grey">
 	<h1>Press</h1>
 	<ul>
-		<li class="col-sm-6">
+		<li class="col-md-6 col-sm-12 col-xs-12">
 			<div class="company-image">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/press-1.png">
 			</div>
@@ -35,7 +35,7 @@ Template Name: About Template
 				<p class="source">Heri Rakotomalala, Montreal Tech Watch</p>
 			</div>
 		</li>
-		<li class="col-sm-6">
+		<li class="col-md-6 col-sm-12 col-xs-12">
 			<div class="company-image">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/press-2.png">
 			</div>
@@ -44,7 +44,7 @@ Template Name: About Template
 				<p class="source">Stéphanie Grammond, La Presse</p>
 			</div>
 		</li>
-		<li class="col-sm-6">
+		<li class="col-md-6 col-sm-12 col-xs-12">
 			<div class="company-image">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/press-3.png">
 			</div>
@@ -53,7 +53,7 @@ Template Name: About Template
 				<p class="source">Julien Brault, Les Affaires</p>
 			</div>
 		</li>
-		<li class="col-sm-6">
+		<li class="col-md-6 col-sm-12 col-xs-12">
 			<div class="company-image">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/press-4.png">
 			</div>
@@ -62,7 +62,7 @@ Template Name: About Template
 				<p class="source">Martin Lessard, Radio-Canada</p>
 			</div>
 		</li>
-		<li class="col-sm-6">
+		<li class="col-md-6 col-sm-12 col-xs-12">
 			<div class="company-image">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/press-2.png">
 			</div>
@@ -71,7 +71,7 @@ Template Name: About Template
 				<p class="source">Jean-François Coderre, La Presse</p>
 			</div>
 		</li>
-		<li class="col-sm-6">
+		<li class="col-md-6 col-sm-12 col-xs-12">
 			<div class="company-image">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/press-5.png">
 			</div>
@@ -86,7 +86,7 @@ de téléphone</p>
 <div class="about-3 section">
 	<h1>Meet the team</h1>
 	<div class="container">
-		<div class="col-xs-6 col-md-4">
+		<div class="col-xs-12 col-sm-6 col-md-4">
 			<div class="team-member">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/thierry.jpg">
 				<div class="description">
@@ -104,7 +104,7 @@ de téléphone</p>
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-6 col-md-4">
+		<div class="col-xs-12 col-sm-6 col-md-4">
 			<div class="team-member">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/frederic.jpg">
 				<div class="description">
@@ -122,7 +122,7 @@ de téléphone</p>
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-6 col-md-4">
+		<div class="col-xs-12 col-sm-6 col-md-4">
 			<div class="team-member">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/stephane.jpg">
 				<div class="description">
