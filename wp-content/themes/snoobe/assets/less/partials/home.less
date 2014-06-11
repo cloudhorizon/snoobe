@@ -2,20 +2,20 @@
 // Home
 // --------------------------------------------------
 
+.navbar-brand {
+	line-height: 100px !important;
+	height: 100px !important;
+}
+.navbar-nav li {
+	background: url(../img/divider-line.png) no-repeat right 35px !important;
+
+	a {
+		padding: 37px 27px 10px !important;
+	}
+}
+
 .home {
 	background-color: #97c2dd;
-
-	.navbar-brand {
-		line-height: 100px;
-		height: 100px;
-	}
-	.navbar-nav li {
-		background: url(../img/divider-line.png) no-repeat right 35px;
-
-		a {
-			padding: 37px 27px 10px;
-		}
-	}
 
 	header {
 		position: fixed;
@@ -55,7 +55,7 @@
 			a {
 				display: block;
 				width: 43px;
-				height: 6px;
+				padding: 15px 0;
 				background: url(../img/slide.png) no-repeat center;
 
 				&.active {
@@ -136,6 +136,29 @@ body.home {
 
 	.slides {
 		height: 100%;
+
+		.nav-left {
+			position: fixed;
+			display: block;
+			left: 20px;
+			top: 50%;
+			margin-top: -25px;
+			width: 50px;
+			height: 50px;
+			background: url(../img/arrows-left-dark.png) no-repeat center;
+			z-index: 1001;
+		}
+		.nav-right {
+			position: fixed;
+			display: block;
+			right: 20px;
+			top: 50%;
+			margin-top: -25px;
+			width: 50px;
+			height: 50px;
+			background: url(../img/arrows-right-light.png) no-repeat center;
+			z-index: 1001;
+		}
 
 		.slide {
 			height: 100%;
@@ -324,7 +347,32 @@ body.home {
 
 /* SLIDE 4 */
 .slide-4 {
-	
+	.popup {
+		position: relative;
+		width: 630px;
+		background-color: #99c32a;
+		height: 20%;
+		margin-top: 11px;
+		box-sizing: border-box;
+		padding: 20px 100px 20px 20px;
+
+		p {
+			color: #fff;
+			font-family: @black;
+			font-size: 27px;
+		}
+		span {
+			position: absolute;
+			right: 20px;
+			color: #fff;
+			font-family: @black;
+			font-size: 65px;
+			top: 25px;
+		}
+	}
+	.popup-1 {
+		margin-top: 0;
+	}
 }
 
 /* SLIDE 5 */
@@ -373,17 +421,62 @@ body.home {
     .the-form {
     	width: 500px;
     	height: 500px;
-    	margin: 0 auto;
+    	margin-left: 100px;
     	margin-top: 100px;
 
     	input {
     		width: 100%;
+			  padding: 12px 12px;
+			  margin-bottom: 20px;
+			  border: 1px solid #a3a2a2;
+			  border-radius: 0px;
+			  font-family: @bold;
+			  font-size: 18px;
+			  color: #a3a2a2;
+    	}
+    	.right {
+    		width: 170px;
+
+    		.join {
+	    		float: right;
+	    		padding: 25px 35px;
+	    		margin-bottom: 20px;
+	    		color: #fff;
+	    		font-family: @bold;
+	    		font-size: 30px;
+	    		background-color: #99c32a;
+	    	}
+	    	.back {
+	    		float: right;
+	    		color: #838484;
+	    		font-family: @bold;
+	    		font-size: 30px;
+	    		text-decoration: underline;
+	    	}
     	}
     }
 	}
 }
 
+/* CSS FOR CUSTOM SELECT BOXES */
 
+.customSelect {
+  width: 100%;
+  padding: 12px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #a3a2a2;
+  border-radius: 0px;
+  font-family: @bold;
+  font-size: 18px;
+  color: #a3a2a2;
+  background: #fff url(../img/select.png) no-repeat 95% center;
+  background-size: 30px;
+  @include prefix("box-sizing", "border-box");
+}
+.customSelectInner {
+  width: 100% !important;
+  color: #a3a2a2;
+}
 
 
 

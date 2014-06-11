@@ -18,20 +18,46 @@ var map;
 var win = $(window);
 var windowWidth = win.width();
 var windowHeight = win.height();
-
+var parallax;
 
 (function($) {
 
+  /*--- Custom select boxes ---*/
+  $('.stylized').customSelect();
+
+  /*--- Adding class-active on pager ---*/
+  var sections = $('.slide'),
+  nav = $('.homepage-fixed-footer>ul');
+
+  $(window).on('scroll', function () {
+    var cur_pos = $(this).scrollLeft();
+
+    sections.each(function() {
+      var left = $(this).offset().left,
+          right = left + $(this).windowWidth;
+   
+      if (cur_pos >= left) {
+        nav.find('a').removeClass('active');
+        sections.removeClass('active');
+   
+        $(this).addClass('active');
+        nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+      }
+    });
+  });
+  /* -end- */
+
+  /*--- Add class to home html ---*/
   if($('body').hasClass('home')) {
     $('html').addClass('home-html');
   }
-  
-  var parallax;
+  /* -end- */
+
+  /*--- Call for parallax function (defined in parallax.js) ---*/
   if ('.home') {
-    $(function(){
-      parallax = new Parallax();
-    });
+    parallax = new Parallax();
   }
+  /* -end- */
   
 
 
