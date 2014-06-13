@@ -53,7 +53,7 @@ var Parallax = function(opt) {
             constant: 0
         },
         // Default number of slides
-        numberOfSlides: 8
+        numberOfSlides: 7
     };
 
     // Extend default options with passed options
@@ -154,7 +154,7 @@ var Parallax = function(opt) {
         // Move chest
         goldChest: function() {
             options.goldChest.element.css({
-                'left': - parseInt(options.container.element.scrollLeft(), 25) * options.goldChest.constant
+                'margin-left': - parseInt(options.container.element.scrollLeft(), 10) / 5.5
             });
         }
     };

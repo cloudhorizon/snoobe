@@ -3,6 +3,7 @@
  */
 
 @import "bootstrap/bootstrap.less";
+@import "mixins/retina";
 @import "partials/home";
 @import "partials/header";
 @import "partials/product";
@@ -356,7 +357,25 @@ p.subheader {
    }
 }
 
+/* NAVBAR */
+.navbar-toggle {
+   width: 33px;
+   height: 29px;
+   margin-top: 35px;
+   border: 0;
+   border-radius: 0;
+   background-color: #fff !important;
+   .retina('menu-mobile.png', 33px, 29px, repeat);
 
+   span {
+      display: none !important;
+   }
+
+   &:hover, &:active, &:focus, &.active {
+      background-color: #fff !important;
+      .retina('menu-mobile-active.png', 33px, 29px, repeat);
+   }
+}
 
 /* ==========================================================================
    WordPress Generated Classes

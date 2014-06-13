@@ -22,6 +22,10 @@ var parallax;
 
 (function($) {
 
+  $('.popup').hover(function(){
+      $(this).toggleClass("move");
+  });
+
   /*--- Custom select boxes ---*/
   $('.stylized').customSelect();
 
@@ -130,10 +134,12 @@ if ($("#contact-map").length > 0) {
 
 $(document).ready(UTIL.loadEvents);
 
+// FAQ Dropdown
 $('.panel-heading').click(function(){
   if($('.collapse').hasClass('in')) {
+    $('.panel-heading').addClass('minus');
+  } else {
     $('.panel-heading').removeClass('minus');
-    $(this).addClass('minus');
   }
 });
 
