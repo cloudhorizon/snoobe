@@ -12,7 +12,8 @@
  */
 function roots_scripts() {
   wp_enqueue_style('lato_fonts', get_template_directory_uri() . '/assets/fonts/lato/stylesheet.css', false, 'c42f950ea7f449763003998cc95f2709');
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'b43740dba8ecf7a41c7a0fdffe61f7b0');
+  wp_enqueue_style('idangerous', get_template_directory_uri() . '/assets/css/idangerous.swiper.css', false, 'b43740dba8ecf7a41c7a0fdffe61f7b0');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'b9de537186fa972ef084d088de271b63');
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
@@ -31,11 +32,13 @@ function roots_scripts() {
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.7.0.min.js', array(), null, false);
   wp_register_script('mousewheel', get_template_directory_uri() . '/assets/js/vendor/jquery.mousewheel.min.js', array(), true);
   wp_register_script('parallax', get_template_directory_uri() . '/assets/js/parallax.js', array(), true);
+  wp_register_script('idangerous', get_template_directory_uri() . '/assets/js/vendor/idangerous.swiper-2.1.min.js', array(), true);
   wp_register_script('custom-select', get_template_directory_uri() . '/assets/js/vendor/jquery.customSelect.min.js', array(), true);
-  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '85408b7a664ce2bcc2e0e89de296176c', true);
+  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '0ef03567a24feeea1e5ad9cb5e0caf25', true);
   wp_enqueue_script('modernizr');
   wp_enqueue_script('mousewheel');
   wp_enqueue_script('parallax');
+  wp_enqueue_script('idangerous');
   wp_enqueue_script('custom-select');
   wp_enqueue_script('jquery');
   wp_enqueue_script('google_map');

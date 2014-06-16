@@ -200,6 +200,11 @@ var Parallax = function(opt) {
         self.onMouseWheel.apply(self, [event, delta, event.deltaFactor]);
     });
 
+    var self = this;
+    $(window).on('resize', function() {
+        self.resize();
+    });
+
     // Just a tmp log
     console.log(options);
 
