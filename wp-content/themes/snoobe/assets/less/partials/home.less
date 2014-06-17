@@ -85,29 +85,58 @@ body.home {
 	  position: fixed;
 	  z-index: 1;
 	  left: 0;
+	  bottom: 64%;
 	  transform: translate3d(0, 0, 0);
 	  -webkit-transform: translate3d(0, 0, 0);
 	  height: 120px; // Added for smaller screen
+
+	  @media (min-height: 750px) {
+	  	height: 180px;
+	  	bottom: 60%;
+	  }
+	  @media (min-height: 900px) {
+	  	height: 220px;
+	  }
 	}
 
 	.bushes {
 	  position: fixed;
 	  z-index: 4;
 	  left: 0;
-	  top: 300px;
+	  bottom: 126px;
 	  transform: translate3d(0, 0, 0);
 	  -webkit-transform: translate3d(0, 0, 0);
 	  height: 285px; // Added for smaller screen
+
+	  @media (min-height: 750px) {
+	  	height: 300px;
+	  }
+	  @media (min-height: 900px) {
+	  	height: 387px;
+	  }
 	}
 
 	.trees {
 	  position: fixed;
 	  z-index: 1;
 	  left: 0;
-	  top: 108px;
+	  bottom: 167px;
 	  transform: translate3d(0, 0, 0);
 	  -webkit-transform: translate3d(0, 0, 0);
 	  height: 431px; // Added for smaller screen
+
+	  @media (min-height: 750px) {
+	  	height: 525px;
+	  	bottom: 170px;
+	  }
+	  @media (min-height: 900px) {
+	  	height: 600px;
+			bottom: 197px;
+	  }
+	  @media (min-height: 1024px) {
+	  	height: 710px;
+			bottom: 234px;
+	  }
 	}
 
 	.path {
@@ -144,6 +173,15 @@ body.home {
 		width: 487px;
 		height: 500px;
 
+		@media (min-height: 900px) {
+	  	bottom: 80px;
+			width: 580px;
+	  }
+	  @media (min-height: 1024px) {
+	  	bottom: 110px;
+			width: 655px;
+	  }
+
 		.chest-wrapper {
 			.chest-glow {
 				position: absolute;
@@ -154,6 +192,15 @@ body.home {
 				-moz-animation: opacity-change 1.5s infinite;
 				-o-animation: opacity-change 1.5s infinite;
 				animation: opacity-change 1.5s infinite;
+
+				@media (min-height: 900px) {
+			  	top: 57px;
+					left: 13px;
+			  }
+			  @media (min-height: 1024px) {
+			  	top: 48px;
+					left: 5px;
+			  }
 			}
 			.chest {
 				width: 65%;
@@ -220,26 +267,67 @@ body.home {
 			      border-top: 8px solid #dedfdf;
 			      margin: 16px 0;
 			   }
+			   @media (min-height: 900px) {
+				  	font-size: 58px;
+						line-height: 58px;
+				 }
+				 @media (min-height: 1024px) {
+				  	font-size: 64px;
+						line-height: 64px;
+				 }
 		  	}
 		  	.slide-subheader {
 		  		color: @green;
 		  		font-family: @black;
 		  		font-size: 36px;
 		  		line-height: 36px;
+
+		  		@media (min-height: 900px) {
+				  	font-size: 42px;
+						line-height: 42px;
+				  }
+				  @media (min-height: 1024px) {
+				  	font-size: 48px;
+						line-height: 48px;
+				  }
 		  	}
 		  	.instructions {
+		  		display: block;
 		  		margin-top: 20px;
 		  		font-family: @black-italic;
 		  		font-size: 24px;
 		  		line-height: 24px;
 		  		color: #777;
+
+		  		@media (min-height: 900px) {
+		  			margin-top: 30px;
+				  	font-size: 28px;
+						line-height: 28px;
+				  }
+				  @media (min-height: 1024px) {
+				  	margin-top: 40px;
+				  	font-size: 32px;
+						line-height: 32px;
+				  }
 		  	}
 		  	.learn-more {
+		  		display: block;
 		  		margin-top: 20px;
 		  		font-family: @black;
 		  		font-size: 24px;
 		  		color: @grey;
 		  		text-decoration: underline;
+
+		  		@media (min-height: 900px) {
+		  			margin-top: 30px;
+				  	font-size: 28px;
+						line-height: 28px;
+				  }
+				  @media (min-height: 1024px) {
+				  	margin-top: 40px;
+				  	font-size: 32px;
+						line-height: 32px;
+				  }
 		  	}
 		  }
 		}
@@ -256,7 +344,7 @@ body.home {
 
 /* SLIDE 1 */
 .slide-1 {
-	background: url(../img/green-background.png) no-repeat top center;
+	background-color: #86a24d;
 
 	.slide-1-text {
 		position: absolute;
@@ -270,9 +358,16 @@ body.home {
 			font-size: 36px;
 			text-align: left;
 			font-family: @black;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 			&:after {
 				display: none;
 			}
+			@media (min-height: 900px) {
+		  	font-size: 42px;
+		  }
+		  @media (min-height: 1024px) {
+		  	font-size: 60px;
+		  }
 		}
 		h2 {
 			margin: 20px 0px 20px;
@@ -280,6 +375,14 @@ body.home {
 			font-family: @black;
 			font-size: 28px;
 			text-align: left;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+			@media (min-height: 900px) {
+		  	font-size: 34px;
+		  }
+		  @media (min-height: 1024px) {
+		  	font-size: 44px;
+		  }
 		}
 		p, a {
 			margin: 0;
@@ -287,6 +390,14 @@ body.home {
 			font-family: @black;
 			font-size: 20px;
 			text-align: left;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+			@media (min-height: 900px) {
+		  	font-size: 26px;
+		  }
+		  @media (min-height: 1024px) {
+		  	font-size: 34px;	
+		  }
 		}
 		.google-play-link {
 			display: block;
@@ -294,6 +405,15 @@ body.home {
 			height: 88px;
 			background: url(../img/google-play-icon.png) no-repeat center;
 			background-size: 100%;
+
+			@media (min-height: 900px) {
+		  	width: 325px;
+				height: 110px;
+		  }
+		  @media (min-height: 1024px) {
+		  	width: 389px;
+				height: 127px;
+		  }
 		}
 	}
 	.slide-1-robin {
@@ -302,6 +422,14 @@ body.home {
 		bottom: 250px;
 		left: 50%;
 		z-index: 4;
+
+		@media (min-height: 900px) {
+	  	width: 500px;
+	  }
+	  @media (min-height: 1024px) {
+	  	width: 628px;
+	  	bottom: 300px;
+	  }
 	}
 	.slide-1-footer {
 		display: block;
@@ -311,6 +439,10 @@ body.home {
 		height: 150px;
 		background-color: #cccccc;
 		z-index: 5;
+
+		@media (min-height: 1024px) {
+			height: 200px;
+	  }
 
 		.companies {
 		 	padding: 0;
@@ -363,6 +495,13 @@ body.home {
 		left: 400px;
 		bottom: 150px;
 		z-index: 2;
+
+		@media (min-height: 900px) {
+	  	height: 600px;
+	  }
+	  @media (min-height: 1024px) {
+	  	height: 750px;
+	  }
 	}
 }
 
@@ -374,33 +513,59 @@ body.home {
 		left: 400px;
 		bottom: 150px;
 		z-index: 2;
+
+		@media (min-height: 900px) {
+	  	height: 570px;
+	  }
+	  @media (min-height: 1024px) {
+	  	height: 613px;
+	  }
 	}
 }
 
 /* SLIDE 4 */
 .slide-4 {
 	.popup {
+		display: table;
 		position: relative;
 		width: 630px;
 		background-color: #99c32a;
 		height: 20%;
 		margin-top: 11px;
 		box-sizing: border-box;
-		padding: 20px 107px 20px 20px;
+		padding: 20px 125px 20px 20px;
 		-webkit-transition: all 1s ease;
 	  -moz-transition: all 1s ease;
 	  -o-transition: all 1s ease;
 	  -ms-transition: all 1s ease;
 	  left: 0;
 
+	  @media (min-height: 900px) {
+	  	padding: 20px 120px 20px 20px;
+	  	height: 21%;
+			margin-top: 14px;
+	  }
+	  @media (min-height: 1024px) {
+	  	margin-top: 21px;
+	  }
+
 	  &.move {
 	  	left: 500px;
 	  }
 
 		p {
+			display: table-cell;
+			vertical-align: middle;
 			color: #fff;
 			font-family: @black;
 			font-size: 27px;
+
+			@media (min-height: 900px) {
+		  	font-size: 30px;
+		  }
+		  @media (min-height: 1024px) {
+		  	font-size: 36px;
+		  }
 		}
 		span {
 			position: absolute;
@@ -409,6 +574,15 @@ body.home {
 			font-family: @black;
 			font-size: 65px;
 			top: 25px;
+
+			@media (min-height: 900px) {
+		  	font-size: 74px;
+				top: 40px;
+		  }
+		  @media (min-height: 1024px) {
+		  	font-size: 82px;
+				top: 54px;
+		  }
 		}
 	}
 	.popup-1 {
@@ -424,6 +598,13 @@ body.home {
 		left: 476px;
 		bottom: 280px;
 		z-index: 2;
+
+		@media (min-height: 900px) {
+	  	height: 450px;
+	  }
+	  @media (min-height: 1024px) {
+	  	
+	  }
 	}
 }
 
@@ -439,6 +620,15 @@ body.home {
 		background-size: cover;
 		z-index: 2;
 
+		@media (min-height: 900px) {
+	  	height: 390px;
+			width: 410px;
+	  }
+	  @media (min-height: 1024px) {
+	  	height: 534px;
+			width: 558px;
+	  }
+
 		a {
 			display: block;
 			width: 200px;
@@ -447,6 +637,19 @@ body.home {
 			margin-left: 23px;
 			background: url(../img/google-play-slide-6.png) no-repeat top center;
 			background-size: cover;
+
+			@media (min-height: 900px) {
+		  	width: 280px;
+				height: 117px;
+				margin-top: 66px;
+				margin-left: 25px;
+		  }
+		  @media (min-height: 1024px) {
+		  	width: 385px;
+				height: 160px;
+				margin-top: 88px;
+				margin-left: 35px;
+		  }
 		}
 	}
 }
@@ -465,18 +668,39 @@ body.home {
     	height: 500px;
     	margin: 100px auto;
 
+    	@media (min-height: 1024px) {
+		  	width: 675px;
+		  	height: 600px;
+		  }
+
     	input {
     		width: 100%;
 			  padding: 12px 12px;
 			  margin-bottom: 20px;
-			  border: 1px solid #a3a2a2;
+			  border: 0;
 			  border-radius: 0px;
 			  font-family: @bold;
 			  font-size: 18px;
 			  color: #a3a2a2;
+
+			  @media (min-height: 900px) {
+			  	padding: 14px 12px;
+			  	font-size: 24px;
+			  }
+			  @media (min-height: 1024px) {
+			  	padding: 20px 20px;
+					font-size: 36px;
+			  }
     	}
     	.right {
     		width: 170px;
+
+    		@media (min-height: 900px) {
+			  	width: 210px;
+			  }
+			  @media (min-height: 1024px) {
+			  	
+			  }
 
     		.join {
 	    		float: right;
@@ -486,6 +710,15 @@ body.home {
 	    		font-family: @bold;
 	    		font-size: 30px;
 	    		background-color: #99c32a;
+
+	    		@media (min-height: 900px) {
+				  	padding: 15px 65px;
+				  	font-size: 40px;
+				  }
+				  @media (min-height: 1024px) {
+				  	padding: 15px 100px;
+						font-size: 46px;
+				  }
 	    	}
 	    	.back {
 	    		float: right;
@@ -493,6 +726,13 @@ body.home {
 	    		font-family: @bold;
 	    		font-size: 30px;
 	    		text-decoration: underline;
+
+	    		@media (min-height: 900px) {
+				  	font-size: 38px;
+				  }
+				  @media (min-height: 1024px) {
+				  	font-size: 42px;
+				  }
 	    	}
     	}
     }
@@ -505,7 +745,7 @@ body.home {
   width: 100%;
   padding: 12px 12px;
   margin-bottom: 20px;
-  border: 1px solid #a3a2a2;
+  border: 0;
   border-radius: 0px;
   font-family: @bold;
   font-size: 18px;
@@ -513,6 +753,17 @@ body.home {
   background: #fff url(../img/select.png) no-repeat 95% center;
   background-size: 30px;
   @include prefix("box-sizing", "border-box");
+
+  @media (min-height: 900px) {
+  	padding: 14px 12px;
+  	font-size: 24px;
+  	background-size: 40px;
+  }
+  @media (min-height: 1024px) {
+  	padding: 20px 20px;
+		font-size: 36px;
+		background-size: 55px;
+  }
 }
 .customSelectInner {
   width: 100% !important;

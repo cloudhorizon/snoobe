@@ -109,19 +109,19 @@ keyboard arrows to navigate.</p>
     		<div class="the-form">
     			<input type="email" placeholder="Email address">
     			<div class="selectboxes">
-						<select class="stylized">
-				        <option>Select 1</option>
-				        <option>2</option>
-				    </select>
-				    <select class="stylized">
-				        <option>Select 2</option>
-				        <option>2</option>
-				    </select>
-					</div>
-					<div class="right">
-						<a href="#" class="join">Join</a>
-						<a href="#" class="back">< Go back</a>
-					</div>
+					<select class="stylized">
+			        <option>Select 1</option>
+			        <option>2</option>
+			    </select>
+			    <select class="stylized">
+			        <option>Select 2</option>
+			        <option>2</option>
+			    </select>
+				</div>
+				<div class="right">
+					<a href="#" class="join">Join</a>
+					<a href="#" class="back">< Go back</a>
+				</div>
     		</div>
     	</div>
     </div>

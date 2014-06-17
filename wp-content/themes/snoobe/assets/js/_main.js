@@ -26,14 +26,16 @@ var parallax;
   /* Home page slider */
   /* **************** */
 
-  var mySwiper = new Swiper('.swiper-container',{
-    pagination: '.pagination',
-    speed : 1000,
-    autoplay: 3000,
-    loop: false,
-    paginationClickable: true
-  });
-
+  if($('.swiper-container')) {
+    var mySwiper = new Swiper('.swiper-container',{
+      pagination: '.pagination',
+      speed : 1000,
+      autoplay: 3000,
+      loop: false,
+      paginationClickable: true
+    });
+  }
+  
   $('.arrow-left').on('click', function(e){
     e.preventDefault();
     mySwiper.swipePrev();
