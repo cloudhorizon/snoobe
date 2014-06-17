@@ -1,7 +1,7 @@
 <div id="parallax" class="parallax">
   <img id="clouds" class="clouds" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/clouds.png" />
   <img id="bushes" class="bushes" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bushes-2.png" />
-  <img id="trees" class="trees" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/trees.png" />
+  <img id="trees" class="trees" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/trees-2.png" />
   <img id="path" class="path" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/path.png" />
 
   <div class="slides">
