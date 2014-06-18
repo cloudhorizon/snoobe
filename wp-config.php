@@ -33,6 +33,10 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/** Set rott address */
+define('WP_HOME','http://192.168.1.3:8888/snoobe/');
+define('WP_SITEURL','http://192.168.1.3:8888/snoobe/');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

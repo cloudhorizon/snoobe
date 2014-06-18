@@ -173,6 +173,10 @@ body.home {
 		width: 487px;
 		height: 500px;
 
+		@media (max-height: 650px) {
+			bottom: 0px;
+			width: 415px;
+		}
 		@media (min-height: 900px) {
 	  	bottom: 80px;
 			width: 580px;
@@ -193,6 +197,10 @@ body.home {
 				-o-animation: opacity-change 1.5s infinite;
 				animation: opacity-change 1.5s infinite;
 
+				@media (max-height: 650px) {
+					top: 71px;
+					left: 35px;
+				}
 				@media (min-height: 900px) {
 			  	top: 57px;
 					left: 13px;
@@ -252,6 +260,9 @@ body.home {
 		  	background-color: #fff;
 		  	z-index: 1;
 
+		  	@media (max-height: 650px) {
+		  		padding: 40px 80px;
+		  	}
 		  	.slide-header {
 		  		color: @grey;
 		  		font-family: @black;
@@ -267,6 +278,10 @@ body.home {
 			      border-top: 8px solid #dedfdf;
 			      margin: 16px 0;
 			   }
+			   @media (max-height: 650px) {
+		  			font-size: 42px;
+		  			line-height: 42px;
+		  	 }
 			   @media (min-height: 900px) {
 				  	font-size: 58px;
 						line-height: 58px;
@@ -282,6 +297,10 @@ body.home {
 		  		font-size: 36px;
 		  		line-height: 36px;
 
+		  		@media (max-height: 650px) {
+		  			font-size: 32px;
+		  			line-height: 32px;
+		  	  }
 		  		@media (min-height: 900px) {
 				  	font-size: 42px;
 						line-height: 42px;
@@ -362,6 +381,10 @@ body.home {
 			&:after {
 				display: none;
 			}
+			@media (max-height: 650px) {
+	  		margin: 40px 0px 20px 0px;
+				font-size: 30px;
+	  	}
 			@media (min-height: 900px) {
 		  	font-size: 42px;
 		  }
@@ -406,6 +429,10 @@ body.home {
 			background: url(../img/google-play-icon.png) no-repeat center;
 			background-size: 100%;
 
+			@media (max-height: 650px) {
+				width: 220px;
+				height: 70px;
+			}
 			@media (min-height: 900px) {
 		  	width: 325px;
 				height: 110px;
@@ -423,6 +450,9 @@ body.home {
 		left: 50%;
 		z-index: 4;
 
+		@media (max-height: 650px) {
+	  	width: 295px;
+	  }
 		@media (min-height: 900px) {
 	  	width: 500px;
 	  }
@@ -440,16 +470,22 @@ body.home {
 		background-color: #cccccc;
 		z-index: 5;
 
+		@media (max-height: 650px) {
+			bottom: 102px;
+		}
 		@media (min-height: 1024px) {
 			height: 200px;
 	  }
 
 		.companies {
+			display: table;
+			width: 100%;
 		 	padding: 0;
 			list-style: none;
 
 			li {
-				float: left;
+				display: table-cell;
+				vertical-align: middle;
 				width: 16%;
 
 				p {
@@ -496,6 +532,9 @@ body.home {
 		bottom: 150px;
 		z-index: 2;
 
+		@media (max-height: 650px) {
+			height: 410px;
+		}
 		@media (min-height: 900px) {
 	  	height: 600px;
 	  }
@@ -514,6 +553,9 @@ body.home {
 		bottom: 150px;
 		z-index: 2;
 
+		@media (max-height: 650px) {
+			height: 385px;
+		}
 		@media (min-height: 900px) {
 	  	height: 570px;
 	  }
@@ -540,6 +582,10 @@ body.home {
 	  -ms-transition: all 1s ease;
 	  left: 0;
 
+	  @media (max-height: 650px) {
+			height: 19%;
+			margin-top: 12px;
+	  }
 	  @media (min-height: 900px) {
 	  	padding: 20px 120px 20px 20px;
 	  	height: 21%;
@@ -560,6 +606,9 @@ body.home {
 			font-family: @black;
 			font-size: 27px;
 
+			@media (max-height: 650px) {
+				font-size: 26px;
+			}
 			@media (min-height: 900px) {
 		  	font-size: 30px;
 		  }
@@ -599,6 +648,10 @@ body.home {
 		bottom: 280px;
 		z-index: 2;
 
+		@media (max-height: 650px) {
+			height: 350px;
+			bottom: 242px;
+		}
 		@media (min-height: 900px) {
 	  	height: 450px;
 	  }

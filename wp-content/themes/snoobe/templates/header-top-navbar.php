@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <?php if (isMobile()): ?>
-      <a class="navbar-brand" href="<?php echo home_url(); ?>/"><img src='<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo-mobile.png'/></a>
+      <a class="navbar-brand" href="<?php echo home_url(); ?>/"><span></span></a>
       <?php else: ?>
         <a class="navbar-brand" href="<?php echo home_url(); ?>/"><img src='<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo-big.png'/></a>
       <?php endif; ?>
