@@ -57,6 +57,11 @@ h1 {
    font-size: 55px;
    text-align: center;
 
+   @media only screen and (max-width : 480px) {
+      font-size: 36px;
+      padding: 0 10px;
+   }
+
    &:after {
       content: '';
       display: block;
@@ -69,11 +74,16 @@ h1 {
 }
 p.subheader {
    display: block;
+   width: 70%;
    margin: 0 auto;
    color: @dark-grey;
    font-size: 18px;
    text-align: center;
-   width: 70%;
+
+   @media only screen and (max-width : 480px) {
+      width: 90%;
+      font-size: 16px;
+   }
 }
 
 .google-play {

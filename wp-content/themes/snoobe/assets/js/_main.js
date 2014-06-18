@@ -131,6 +131,7 @@ var UTIL = {
 };
 
 /***** GOOGLE MAP ****/
+/*
 if ($("#contact-map").length > 0) {
   initialize = function() {
     var myLatlng = new google.maps.LatLng(45.509385,-73.675071);
@@ -154,7 +155,7 @@ if ($("#contact-map").length > 0) {
   };
   google.maps.event.addDomListener(window, "load", initialize);
 }
-
+*/
 $(document).ready(UTIL.loadEvents);
 
 // FAQ Dropdown

@@ -39,9 +39,13 @@
       </nav>
     <?php endif; ?>
   </div>
-  <div class="main-blog-sidebar">
-    <?php dynamic_sidebar('sidebar-primary'); ?>
-  </div>
+  <?php if (isMobile()) : ?>
+    
+  <?php else: ?>
+    <div class="main-blog-sidebar">
+      <?php dynamic_sidebar('sidebar-primary'); ?>
+    </div>
+  <?php endif; ?>
 </div>
 
 

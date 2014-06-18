@@ -18,6 +18,10 @@
 		h4 {
 			color: #484747;
 			font-size: 21px;
+
+			@media only screen and (max-width : 480px) {
+				font-size: 16px;
+			}
 		}
 	}
 	.panel-body {
@@ -26,24 +30,44 @@
 		p {
 			color: #a3a2a2;
 			font-size: 21px;
+			
+			@media only screen and (max-width : 480px) {
+				font-size: 16px;
+			}
 		}
 	}
+}
+
+.faq-1 {
+	padding-bottom: 40px;
 }
 
 .faq-top {
 	overflow: hidden;
 	margin-top: 100px;
 	margin-bottom: 20px;
+
+	@media only screen and (max-width : 480px) {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
 	
 	.left {
 		font-family: @black;
 		font-size: 40px;
 		color: #484747;
+
+		@media only screen and (max-width : 480px) {
+			font-size: 32px;
+		}
 	}
 	form {
 		float: right;
 		width: 340px;
 		margin-top: 12px;
+		@media only screen and (max-width : 480px) {
+			width: 100%;
+		}
 
 		input {
 			border-right: 0;

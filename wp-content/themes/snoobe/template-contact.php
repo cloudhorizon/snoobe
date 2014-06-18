@@ -6,20 +6,16 @@ Template Name: Contact Template
 
 <?php get_template_part('templates/content', 'page'); ?>
 
-<div class="header">
-	<h1>Contact</h1>
-	<p>Let’s get in touch!</p>
-</div>
-
 <div class="contact-1 section">
 	<div class="container">
-		<div id="contact-map"></div>
+		<!-- <div id="contact-map"></div> -->
 		<div class="contact-area">
-			<div class="contact-form col-sm-9">
-				<h3>Write Us A Message</h3>
+			<div class="contact-form">
+				<img class="leaning-robin" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/img/contact-robin.png'/>
+				<h3>Let's get in touch.</h3>
 				<?php echo do_shortcode('[contact-form-7 id="27" title="Contact form 1"]'); ?>
 			</div>
-			<div class="contact-address col-sm-3">
+			<!-- <div class="contact-address col-sm-3">
 				<h3>Meet Us In Person</h3>
 				<div class="contact-data">
 					<div class="row">
@@ -50,7 +46,7 @@ Template Name: Contact Template
 					<li><a href="#" class="contact-flickr"></a></li>
 					<li><a href="#" class="contact-dribbble"></a></li>
 				</ul>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>

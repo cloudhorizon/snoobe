@@ -111,6 +111,10 @@
 	height: 675px;
 	background: url(../img/woods.png) no-repeat center;
 
+	@media only screen and (max-width : 480px) {
+		height: 575px;
+	}
+
 	h1 {
 		padding-top: 300px;
 		color: #fff;
@@ -118,6 +122,17 @@
 		font-family: @black;
 		font-size: 72px;
 		margin: 0;
+
+		@media only screen and (max-width : 1024px) {
+			padding-top: 100px;
+			.blog & {
+				padding-top: 300px !important;
+				background-position: center 220px !important;
+			}
+		}
+		@media only screen and (max-width : 480px) {
+			font-size: 52px;
+		}
 
 		&:after {
 			content: '';
@@ -130,24 +145,24 @@
 		}
 
 		.product & {
-			background: url(../img/background-product.png) no-repeat center 240px;
+			background: url(../img/background-product.png) no-repeat center 40px;
 		}
 		.about & {
-			background: url(../img/background-about.png) no-repeat center 240px;
+			background: url(../img/background-about.png) no-repeat center 40px;
 		}
 		.faq & {
-			background: url(../img/background-faq.png) no-repeat center 240px;
+			background: url(../img/background-faq.png) no-repeat center 40px;
 		}
 		.contact & {
-			background: url(../img/background-contact.png) no-repeat center 240px;
+			background: url(../img/background-contact.png) no-repeat center 40px;
 		}
 		.blog & {
-			background: url(../img/background-blog.png) no-repeat center 240px;
+			background: url(../img/background-blog.png) no-repeat center 40px;
 		}
 	}
 	p {
 		color: #fff;
-		font-size: 30px;
+		font-size: 24px;
 		font-family: @italic;
 		text-align: center;
 	}
@@ -158,14 +173,53 @@
 		.about & {
 			right: 0px;
 			bottom: 0px;
+
+			@media only screen and (max-width : 1024px) {
+				right: 50%;
+				bottom: 0px;
+				margin-right: -200px;
+				width: 400px;
+			}
+			@media only screen and (max-width : 480px) {
+				right: 50%;
+				margin-right: -120px;
+				bottom: 0px;
+				width: 240px;
+			}
 		}
 		.faq & {
 			right: 0px;
 			bottom: 0px;
+
+			@media only screen and (max-width : 1024px) {
+				right: 50%;
+				bottom: 0px;
+				margin-right: -190px;
+				width: 380px;
+			}
+			@media only screen and (max-width : 480px) {
+				right: 50%;
+				margin-right: -120px;
+				bottom: 0px;
+				width: 240px;
+			}
 		}
 		.product & {
 			right: 0px;
 			bottom: 0px;
+
+			@media only screen and (max-width : 1024px) {
+				right: 50%;
+				margin-right: -125px;
+				bottom: 0px;
+				width: 250px;
+			}
+			@media only screen and (max-width : 480px) {
+				right: 50%;
+				margin-right: -90px;
+				bottom: 0px;
+				width: 180px;
+			}
 		}
 	}
 }
