@@ -8,13 +8,7 @@
 		font-size: 24px;
 	}
 }
-.touch {
-	.main-blog-content {
-		@media only screen and (max-width : 620px) {
-			padding-right: 0;
-		}
-	}
-}
+
 .blog-area {
 	position: relative;
 	overflow: hidden;
@@ -29,6 +23,10 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+
+		@media only screen and (max-width : 620px) {
+			padding-right: 0;
+		}
 	}
 	.main-blog-sidebar {
 		position: absolute;
@@ -36,6 +34,10 @@
 		top: 0;
 		padding-top: 85px;
 		width: 230px;
+
+		@media only screen and (max-width : 620px) {
+			display: none;
+		}
 
 		h3 {
 			color: #484747;
