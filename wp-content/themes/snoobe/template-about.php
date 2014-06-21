@@ -25,7 +25,7 @@ Template Name: About Template
 </div>
 <div class="about-2 grey">
 	<h1>Press</h1>
-	<ul>
+	<ul class="container">
 		<li class="col-md-6 col-sm-12 col-xs-12">
 			<div class="company-image">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/press-1.png">

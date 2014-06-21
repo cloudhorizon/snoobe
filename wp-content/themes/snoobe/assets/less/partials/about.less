@@ -33,45 +33,68 @@
 			margin-bottom: 10px;
 		}
 	}
-}
+	.more-section {
+		background-color: #f7f7f7;
+		height: 40px;
+		line-height: 40px;
 
-.more-section {
-	background-color: #f7f7f7;
-	height: 40px;
-	line-height: 40px;
+		.left {
+			padding-top: 5px;
+			padding-left: 15px;
 
-	.left {
-		padding-top: 5px;
-		padding-left: 15px;
+			a {
+				display: inline-block;
+				margin-right: 5px;
+				width: 20px;
+				height: 20px;
+				background-repeat: no-repeat;
+				background-position: center;
 
-		a {
-			display: inline-block;
-			margin-right: 5px;
-			width: 20px;
-			height: 20px;
-			background-repeat: no-repeat;
-			background-position: center;
-
-			&.facebook {
-				background-image: url(../img/member-facebook.png);
-			}
-			&.twitter {
-				background-image: url(../img/member-twitter.png);
-			}
-			&.vimeo {
-				background-image: url(../img/member-vimeo.png);
+				&.facebook {
+					background-image: url(../img/member-facebook.png);
+				}
+				&.twitter {
+					background-image: url(../img/member-twitter.png);
+				}
+				&.vimeo {
+					background-image: url(../img/member-vimeo.png);
+				}
 			}
 		}
+		.more {
+			float: right;
+			margin-right: 15px;
+			padding-left: 20px;
+			color: #a3a2a2;
+			font-size: 14px;
+			background: url(../img/more-arrow.png) no-repeat left center;
+		}
 	}
-	.more {
-		float: right;
-		margin-right: 15px;
-		padding-left: 20px;
-		color: #a3a2a2;
-		font-size: 14px;
-		background: url(../img/more-arrow.png) no-repeat left center;
+	&:hover, &:focus {
+		.name {
+			color: #99c326;
+		}
+		.more-section {
+			background-color: #99c326;
+		}
+		.facebook {
+			background-image: url(../img/member-facebook-active.png) !important;
+		}
+		.twitter {
+			background-image: url(../img/member-twitter-active.png) !important;
+		}
+		.vimeo {
+			background-image: url(../img/member-vimeo-active.png) !important;
+		}
+		.more {
+			color: #ffffff;
+			font-size: 14px;
+			background: url(../img/more-arrow-active.png) no-repeat left center !important;
+		}
 	}
 }
+
+	
 
 .about-2 {
 	padding: 20px 0 30px;
@@ -93,7 +116,6 @@
 				}
 			}
 			.press-content {
-				float: left;
 				@media (max-width: 620px) {
 					float: none;
 				}

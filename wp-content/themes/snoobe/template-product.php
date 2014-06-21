@@ -12,11 +12,11 @@ Template Name: Product Template
 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/robin-product.png" class="robin">
 </div>
 <div class="product-1 section">
-	<h1>How Snoobe Works</h1>
-	<p class="subheader">Most people get so confused by the different offers that they end up keeping an 
-		expensive plan because they don't know where else to go.  Snoobe is a simple app that analyzes how you 
-		have been using your phone for the last few months and recommends the best plan FOR YOU!</p>
 	<div class="container">
+		<h1>How Snoobe Works</h1>
+		<p class="subheader">Most people get so confused by the different offers that they end up keeping an 
+			expensive plan because they don't know where else to go.  Snoobe is a simple app that analyzes how you 
+			have been using your phone for the last few months and recommends the best plan FOR YOU!</p>
 		<div class="column col-sm-4">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/column-install.png">
 			<h3>Install and Run</h3>
@@ -55,6 +55,8 @@ Template Name: Product Template
 </div>
 <div class="product-4 section">
 	<h1>Testimonials</h1>
-	<?php echo do_shortcode('[testimonialswidget_list]'); ?>
+	<div class="container">
+		<?php echo do_shortcode('[testimonialswidget_list]'); ?>
+	</div>
 </div>
 

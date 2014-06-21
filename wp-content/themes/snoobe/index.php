@@ -5,7 +5,6 @@
 
 <div class="container blog-area">
   <div class="main-blog-content">
-    <time class="published post-time" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date('M<\b\>j<\/b>'); ?></time>
     <?php if (!have_posts()) : ?>
       <div class="alert alert-warning">
         <?php _e('Sorry, no results were found.', 'roots'); ?>
@@ -14,7 +13,9 @@
     <?php endif; ?>
 
     <?php while (have_posts()) : the_post(); ?>
-    
+    <div class="post-single">
+    <time class="published post-time" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date('M<\b\>j<\/b>'); ?></time>
+
     <?php echo '<a href="', get_permalink(), '">';
       if (has_post_thumbnail()) {
         the_post_thumbnail();
@@ -28,6 +29,7 @@
       echo '</a>';?>
 
       <?php get_template_part('templates/content', get_post_format()); ?>
+      </div>
     <?php endwhile; ?>
 
     <?php if ($wp_query->max_num_pages > 1) : ?>
@@ -39,13 +41,9 @@
       </nav>
     <?php endif; ?>
   </div>
-  <?php if (isMobile()) : ?>
-    
-  <?php else: ?>
-    <div class="main-blog-sidebar">
-      <?php dynamic_sidebar('sidebar-primary'); ?>
-    </div>
-  <?php endif; ?>
+  <div class="main-blog-sidebar">
+    <?php dynamic_sidebar('sidebar-primary'); ?>
+  </div>
 </div>
 
 
